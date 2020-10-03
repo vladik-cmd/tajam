@@ -1,0 +1,72 @@
+//font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)));
+//font-family: 'Hammersmith One', sans-serif;
+// font-family: 'Playfair Display', serif;
+
+html{
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	background: #fff;
+	min-width: 320px;
+	overflow-x: hidden;
+}
+
+a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+button{
+	border:none;
+	outline: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+ul,
+li,
+menu{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	max-width: 970px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.title{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

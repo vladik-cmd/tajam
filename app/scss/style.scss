@@ -1,0 +1,66 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+.header{
+	height: 670px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header-top{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+	margin-bottom: 180px;
+}
+.header__menu{
+	display: flex;
+	margin: auto 0;
+	&-item{
+		text-transform: uppercase;
+		color: #fff;
+		cursor: pointer;
+		transition: all .5s;
+	}
+	&-item:not(:last-child){
+		margin-right: 25px;
+	}
+	&-item:hover{
+		color: #00e0d0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media";
