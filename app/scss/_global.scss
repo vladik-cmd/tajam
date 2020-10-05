@@ -41,38 +41,66 @@ menu{
 	margin: 0;
 	padding: 0;
 }
+.header,
+.story,
+.videos,
+.expertise,
+.team,
+.works,
+.quotes{
+	margin-bottom: 70px;
+}
 
 .container{
 	max-width: 970px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
-
 .title{
 	font-weight: 700;
-	text-transform: uppercase;
+	text-align: center;
 	letter-spacing: 1.1px;
+	position: relative;
+	span{
+		color: #413d4b;
+		font-family: "Playfair Display";
+		font-size: 22px;
+		text-transform: uppercase;
+		letter-spacing: 1.1px;
+	}
+	p{
+		opacity: 0.75;
+		color: #2f2d35;
+		font-size: 14px;
+		font-weight: 400;
+	}
 }
 .title::after{
 	content:"";
 	position: absolute;
 	width: 50px;
 	height: 1px;
-	background-color: #00e0d0;
+	background-color: #413d4b;
+	opacity: 0.3;
 	left: 50%;
 	transform: translatex(-50%);
-	top: 293px;
 }
 .btn{
 	color: #00e0d0;
 	font-family: "Hammersmith One";
 	font-size: 16px;
 	text-transform: uppercase;
+	text-align: center;
 	border: 1px solid #00e0d0;
 	cursor: pointer;
 	padding:  15px;
 	width: 123px;
 	margin: 0 auto;
+}
+.overlay{
+	background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+	opacity: 0.85;
+	height: 100%;
 }
 
 
