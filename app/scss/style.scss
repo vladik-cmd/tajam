@@ -133,7 +133,7 @@
 .video__wrap{
 	background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
 	opacity: 0.85;
-	height: 550px;
+	height: calc(300px + 250 * ((100vw - 320px) / (1600 - 320)));
 }
 .video__wrap.hide{
 	background: 0;
@@ -154,7 +154,10 @@
 }
 .expertise-item{
 	text-align: center;
+	max-width: 255px;
+	margin: 0 auto;
 	&__img{
+		height: 53px;
 		margin-bottom: 35px;
 	}
 	&__title{
@@ -187,6 +190,7 @@
 	margin-bottom: 65px;
 	span{
 		color: #fff;
+		font-size: calc(20px + 2 * ((100vw - 320px) / (1600 - 320)));
 	}
 	p{
 		color: #f9f9f9
@@ -195,12 +199,15 @@
 .team-composition{
 	display: flex;
 	text-align: center;
+	justify-content: center;
 	text-transform: uppercase;
 	margin-bottom: 70px;
 	&__item-img{
 		height: 220px;
 		img{
 			height: 100%;
+			width: 100%;
+			background-size: cover;
 		}
 	}
 }
