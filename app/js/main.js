@@ -34,5 +34,12 @@ $(document).ready(function(){
     });
 });
 
+$(".menu__icon-wrap").click(function(){
+	$(".menu__icon, .header__menu").toggleClass("active");
+});
+
+$("#menu").click(function(){
+	$(".header__menu, .menu__icon").removeClass('active');
+});
 	
 });
