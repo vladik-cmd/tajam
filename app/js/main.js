@@ -25,6 +25,25 @@ $('.quotes__slider-photo').slick({
 	nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/arrows-right.svg" alt=""><img>',
 });
 
+if ($('body').width() < 766){
+	$('.team-composition').slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		autoplay: true,
+ 		autoplaySpeed: 2000,
+		arrows: false,
+		responsive: [
+			{
+		    	breakpoint: 551,
+		    	settings: {
+		        	slidesToShow: 1,
+		        	slidesToScroll: 1
+		      	}
+		    }
+		]
+	});
+}
+
 $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
         event.preventDefault();
@@ -34,5 +53,12 @@ $(document).ready(function(){
     });
 });
 
+$(".menu__icon-wrap").click(function(){
+	$(".menu__icon, .header__menu").toggleClass("active");
+});
+
+$("#menu").click(function(){
+	$(".header__menu, .menu__icon").removeClass('active');
+});
 	
 });
