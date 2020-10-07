@@ -233,7 +233,7 @@
 .team__text{
 	color: #f3f3f3;
 	display: block;
-	width: 310px;
+	width: 290px;
 	margin: 0 auto;
 	margin-bottom: 25px;
 }
@@ -269,7 +269,7 @@
 		grid-template: 1fr 1fr / repeat(6,1fr);
 		margin-bottom: 85px;
 		&__item{
-			height: 200px;
+			height: calc(110px + 90 * ((100vw - 320px) / (1600 - 320)));
 			img{
 				height: 100%;
 				width: 100%;
@@ -380,6 +380,9 @@
 		grid-gap: 30px;
 		&__item{
 			margin: auto;
+			img{
+				width: 100%;
+			}
 		}
 	}
 }
@@ -468,6 +471,7 @@
 }
 .footer-item__subscribe{
 	position: relative;
+	margin-bottom: 25px;
 	&-input{
 		width: 210px;
 		padding: 13px;
@@ -486,6 +490,9 @@
 		opacity: 0.5;
 		background: url('../images/footer/button.png') no-repeat center #ffffff;
 	}
+}
+.item__subscribe-social:not(:last-child){
+	margin-right: 8px;
 }
 
 
